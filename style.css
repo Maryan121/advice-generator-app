@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Exo:wght@100&family=Kumbh+Sans:wght@400;700&family=Manrope:wght@800&family=Outfit:wght@300;400;600&family=Overpass:wght@300;600&family=Plus+Jakarta+Sans:wght@500;800&family=Roboto+Serif:ital,opsz,wght@0,8..144,300;0,8..144,400;0,8..144,600;1,8..144,300&family=Roboto:wght@400;700;900&family=Ubuntu:wght@400;500;700&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+    background-color:  hsl(218, 23%, 16%);
+    color: #fff;
+    font-weight: normal;
+    letter-spacing: .1rem;
+}
+main{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem auto;
+    background-color: hsl(217, 19%, 24%);
+    border-radius: 1rem;
+}
+h1{
+   margin: 1.5rem auto;
+   width: 87%;
+   font-family: 'Exo', sans-serif;
+   font-weight: 100;
+   font-size: 1.5rem;
+}
+.container{
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0;
+    position: relative;
+}
+.qoute-id{
+    color: hsl(150, 100%, 66%);
+    font-size: 16px;
+}
+.qoute{
+    font-size: 28px;
+    font-weight: 800;
+    text-align: center;
+}
+.divider-side{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    
+    /* border: solid yellow 1px; */
+    margin-bottom: 2rem;
+}
+
+.mobile{
+    width: 100%;
+}
+.desktop{
+    width: 90%;
+    display: none;
+}
+.dice-cont{
+   position: absolute;
+   bottom: -3rem;
+    background-color: hsl(150, 100%, 66%);
+    padding: 1rem;
+    border-radius: 2rem;
+    display: flex;
+}
+.dice-cont:hover, .dice-cont:focus{
+   box-shadow: 1px 1px 60px 12px hsl(150, 100%, 66%);
+   cursor: pointer;
+}
+.dice{
+    place-self: center;
+}
+
+
+.attribution { 
+    font-size: 12px;
+    text-align: center; 
+    margin: 5rem auto;
+}
+.attribution a { 
+    color: rgb(140, 187, 140);
+    font-weight: normal;
+    font-family: sans-serif; 
+}
+ 
+
+
+
+@media (min-width: 600px){
+    main{
+        width: 36%;
+        margin: 4rem auto;
+    }
+    .mobile{
+        display: none;
+    }
+    .desktop{
+        display: block;
+        width: 90%;
+    }
+    h1{
+        width: 36%;
+     }
+}
+@media (width:412px),(width:414px),(width:540px){
+    main{
+        width: 90%;
+    }
+    h1{
+        width: 90%;
+       
+     }
+}
